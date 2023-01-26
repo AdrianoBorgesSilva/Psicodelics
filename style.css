@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding: 5px;
+    font-size: 0.9em;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    background-color: #200029;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2em;
+}
+
+.menu div {
+    width: 28px;
+    height: 2px;
+    background-color: white;
+    margin: 8px;
+}
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+.links {
+    display: flex;
+}
+
+.links li {
+    margin-left: 25px;
+}
+
+.SignUp {
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.SignUp:hover {
+    background-color: white;
+    color: #C100F5;
+
+}
+
+main {
+    width: 100%;
+    height: 90vh;
+    background-image: url('imagens/cropped-1920-1080-936378.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main p {
+    color: white;
+    font-family: 'Passion One', 'Times New Roman', Times, serif;
+    font-size: 4em;
+    text-shadow: 1px 1px 0 black;
+}
+
+
+@media (max-width: 999px){
+    .links {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background-color: #200029;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: .4s;
+    }
+
+    .links.selecionado {
+        transform: translateX(0%);
+    }
+
+    .menu {
+        display: block;
+    }
+
+}
